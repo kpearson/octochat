@@ -1,0 +1,24 @@
+{
+  "name": "octochat",
+  "version": "1.0.0",
+  "description": "Github chat client.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kpearson/octochat"
+  },
+  "keywords": [
+    "git",
+    "github",
+    "chat"
+  ],
+  "author": "Trey Tomlinson, Jeff Gu, Kit Pearson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kpearson/octochat/issues"
+  },
+  "homepage": "https://github.com/kpearson/octochat"
+}
