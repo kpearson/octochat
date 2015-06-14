@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const http = require('http').Server(app);  // connect http server to express
+const io = require('socket.io')(http);
+const redis = require('redis');
+const client = redis.createClient();
 
 app.use(express.static('public'));
 
