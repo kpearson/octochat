@@ -4,6 +4,7 @@
   "description": "Github chat client.",
   "main": "index.js",
   "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js index.js",
     "test": "mocha"
   },
   "repository": {
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/kpearson/octochat/issues"
   },
-  "homepage": "https://github.com/kpearson/octochat"
+  "homepage": "https://github.com/kpearson/octochat",
+  "dependencies": {
+    "express": "^4.12.4"
+  }
 }
