@@ -1,11 +1,16 @@
 var socket = io();
 
 socket.on('message', function (message) {
-  $('.messages').append(message.msg + "</br>");
+    $('.messages').append(message.msg + "</br>");
 });
 
 $('#send-message').click(function() {
-  socket.send('message', {
-    msg: "message received"
-  });
+    var $userText = $("#user-message").val();
+    socket.send('message', {
+        msg: $userText
+    });
+});
+
+$(document).ready(function() {
+    $(".dropdown-button").dropdown();
 });
