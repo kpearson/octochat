@@ -15,8 +15,9 @@ io.on('connection', function (socket) {
 listeningClient.subscribe('channel');
 listeningClient.on('message', function (channel, message) {
   var message = JSON.parse(message)
+  var org = io.of("/" + message.org )
   console.log(message.body)
-  io.send('message', {
+  org.send('message', {
     msg: message.body
   });
   // console.log(channel, message, 'node');
