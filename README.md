@@ -9,12 +9,12 @@
 
 Octochat is an asynchronous chat application centered around the Github social ecosystem. Using a microservice architecture based mainly on Ruby on Rails combined with a Node.js websocket publication server and redis pub/sub feature for good mesure.
 
-This repo is the Node.js component.  [Follow this link to the nessisary companiaon Rails app](http://github.com/kpearson/octochat-rails)
+This repo is the Node.js component.  [Follow this link to the necessary companion Rails app](http://github.com/kpearson/octochat-rails)
 
 ### Local Dev Installation
 
-With both repos cloned into sepererate directorys
-* Ensure you have a redis server is running locally
+* clone each repo into separate directories
+* Ensure you have a redis server running locally
 
 * inside the Rails app directory:
   * `bundle && rake db:setup`
